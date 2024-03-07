@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>student form task</title>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css"rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-4">
+        <h3 class="text-white font-weight-bold">student infomatin</h3>
+        <form id="stdFrom">
+          <div class="form-group">
+            <label for="firstName" class="text-white font-weight-bold">firstName</label>
+            <input type="text" class="form-control" id="firstNmae">
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="text-white font-weight-bold">lastName</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-white font-weight-bold">email</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="contact" class="text-white font-weight-bold">contact</label>
+            <input type="text" class="form-control" id="contact">
+          </div>
+          <div class="form-group text-right">
+            <button class="btn btn-warning">add info</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 mt-4">
+        <table class="table table-bordered text-white d-none" id="showTable">
+          <thead>
+            <tr>
+              <th>sr no.</th>
+              <th>first Name</th>
+              <th>last Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody id="stdcontainer">
+             <!-- <tr>
+              <td>1</td>
+              <td>jhon</td>
+              <td>doe</td>
+              <td>jd@gmail.com</td>
+              <td>456789</td>
+             </tr> -->
+          </tbody>
+        </table>
+        <div id="alertMessage" class="alert alert-danger">
+          <h4>!!!No student added yet!!!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
